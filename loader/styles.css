@@ -9,7 +9,7 @@
     text-align: center;
     line-height: 50px;
     background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
-    box-shadow: rgba(211, 195, 48, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(233, 223, 137, 0.25) 0px 25px 35px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: water-waves linear infinite, scaleContainer 3s ease-in-out infinite;
     -webkit-animation: water-waves linear infinite, scaleContainer 3s ease-in-out infinite;
 }
@@ -17,7 +17,7 @@
 .box {
     width: 100%;
     margin: 0 auto;
-    height: 170rem;
+    height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
