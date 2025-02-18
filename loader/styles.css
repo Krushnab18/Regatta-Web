@@ -1,0 +1,163 @@
+.water-round-container {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 3px solid silver;
+    text-align: center;
+    line-height: 50px;
+    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    box-shadow: rgba(211, 195, 48, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: water-waves linear infinite, scaleContainer 3s ease-in-out infinite;
+    -webkit-animation: water-waves linear infinite, scaleContainer 3s ease-in-out infinite;
+}
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+    height: 170rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+@keyframes scaleContainer {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.water-wave1 {
+    position: absolute;
+    top: 55%;
+    left: -25%;
+    background: #33cfff;
+    opacity: 0.7;
+    width: 200%;
+    height: 200%;
+    border-radius: 40%;
+    animation: inherit;
+    animation-duration: 5s;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+    -webkit-animation: inherit;
+}
+
+.water-wave2 {
+    position: absolute;
+    top: 60%;
+    left: -35%;
+    background: #0eaffe;
+    opacity: 0.5;
+    width: 200%;
+    height: 200%;
+    border-radius: 35%;
+    animation: inherit;
+    animation-duration: 7s;
+    -webkit-border-radius: 35%;
+    -moz-border-radius: 35%;
+    -ms-border-radius: 35%;
+    -o-border-radius: 35%;
+}
+
+.water-wave3 {
+    position: absolute;
+    top: 65%;
+    left: -35%;
+    background: #0f7ae4;
+    opacity: 0.3;
+    width: 200%;
+    height: 200%;
+    border-radius: 33%;
+    animation: inherit;
+    animation-duration: 11s;
+}
+
+.water-round-container img {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: floating 1s ease-in-out infinite, tilt 1s ease-in-out infinite;
+    -webkit-animation: floating 1s ease-in-out infinite, tilt 1s ease-in-out infinite;
+}
+
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -12%);
+        -webkit-transform: translate(-50%, -12%);
+        -moz-transform: translate(-50%, -12%);
+        -ms-transform: translate(-50%, -12%);
+        -o-transform: translate(-50%, -12%);
+    }
+}
+
+@keyframes water-waves {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes tilt {
+
+    0%,
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-50%) rotate(-10deg);
+        -webkit-transform: translateX(-50%) rotate(-10deg);
+        -moz-transform: translateX(-50%) rotate(-10deg);
+        -ms-transform: translateX(-50%) rotate(-10deg);
+        -o-transform: translateX(-50%) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    75% {
+        transform: translateX(-50%) rotate(10deg);
+        -webkit-transform: translateX(-50%) rotate(10deg);
+        -moz-transform: translateX(-50%) rotate(10deg);
+        -ms-transform: translateX(-50%) rotate(10deg);
+        -o-transform: translateX(-50%) rotate(10deg);
+    }
+}
+
+
+
